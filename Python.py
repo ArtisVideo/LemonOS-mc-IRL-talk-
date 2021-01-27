@@ -8,12 +8,13 @@ def new_client(client, server):
 #Message recievd print 
 def message_received(client, server, message):
 
-    if message_received == "test":
+    if message == "test":
         send_message = input ("message to send:")
         server.send_message_to_all(send_message)
 
     else:
 	    print("Client(%d) : %s" % (client['id'], message))
+        print(message)
 
 
 #Port specify
