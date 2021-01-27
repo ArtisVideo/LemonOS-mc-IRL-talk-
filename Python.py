@@ -17,7 +17,7 @@ def message_received(client, server, message):
 
 
 #Port specify
-PORT=8
+PORT=6002
 
 #Detection > Run functions
 server = WebsocketServer(PORT, host='127.0.0.1')
