@@ -14,7 +14,6 @@ def message_received(client, server, message):
 
     else:
 	    print("Client(%d) : %s" % (client['id'], message))
-        print(message)
 
 
 #Port specify
