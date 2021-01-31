@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3+xTKcNaT7nT404gh8JbVtw7vOSLBa8th+8F2jSnm+6F8fNHIl+1qG3ouh6wygd09j2atQbsnK0eGyfCyqb6bA==",
+  "success": true,
+  "projectFilePath": "D:\\LUA\\web server\\LemonOS-mc-IRL-talk-\\Phone app\\Xamrin\\Xamrin.iOS\\Xamrin.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
