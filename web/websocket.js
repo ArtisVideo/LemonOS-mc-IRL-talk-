@@ -1,5 +1,5 @@
 //Create WebSocket
-var ws = new WebSocket("ws://127.0.0.1");
+var ws = new WebSocket("wss://artisvideo.com");
 
 //When it works print
 ws.addEventListener('open', function (event) {
