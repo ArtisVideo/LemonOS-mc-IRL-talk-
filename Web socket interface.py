@@ -1,8 +1,7 @@
-import pymongo
 import websocket
 
 ws = websocket.WebSocket()
-ws.connect("ws://127.0.0.1")
+ws.connect("wss://artisvideo.com")
 
 ws.send("Hello, World")
 
