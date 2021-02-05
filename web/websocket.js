@@ -1,15 +1,11 @@
-const net = require('net');
-// Create a server object
-const server = net.createServer((socket) => {
-  socket.on('data', (data) => {
-    console.log(data.toString());
+const WebSocketServer = require('ws').Server;
+const wss = new WebSocketServer({ port: 25565 });
+  
+
+wss.on('connection', function connection(ws) {
+    ws.on('message', function incoming(message) {
+      console.log(message);
+    });
+  
+    ws.send('something');
   });
-  socket.write('SERVER: Hello! This is server speaking.<br>');
-  socket.end('SERVER: Closing connection now.<br>');
-}).on('error', (err) => {
-  console.error(err);
-});
-// Open server on port 9898
-server.listen(9898, () => {
-console.log("are we working?")
-});

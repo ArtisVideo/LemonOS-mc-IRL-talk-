@@ -3,11 +3,13 @@ import websockets
 
 async def hello(websocket, path):
     message = await websocket.recv()
-    await websocket.broadcast(message)
+    await websocket.send(message)
     print(message)
 
-start_server = websockets.serve(hello, "192.168.0.101", 8765)
+start_server = websockets.serve(hello, "94.13.48.95", 25565)
 print("server started")
+
+#Text = input("Please gib me some text - ")
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
