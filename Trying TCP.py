@@ -6,7 +6,7 @@ import sys
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 #create server
-server_address = ('localhost', 1337)
+server_address = ('Oscar-PC', 25565)
 sock.bind(server_address)
 
 #Print incoming connections
@@ -22,4 +22,4 @@ while True:
 
     #Close connecction      
     finally:
-        connection.close()
+        connection.close()s
